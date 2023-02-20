@@ -1,0 +1,17 @@
+[package]
+name = "rust-kafka"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2.0", features = ["full"] }
+futures = "0.3"
+futures-util = "0.3.1"
+bytes = "0.5.4"
+
+# communication with kafka
+rdkafka = "0.23.1"
+
+[[bin]]
+name = "consumer"
+path = "src/consumer.rs"
