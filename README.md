@@ -27,3 +27,11 @@ You should see the Rust application printing the produced messages in the topic 
 
 # Current Behavior
 Rust application is not printing out the messages produced and neither is it able to create a topic with the AdminClient, it's timing out.
+
+```bash
+    Finished dev [unoptimized + debuginfo] target(s) in 0.20s
+     Running `target/debug/consumer`
+topic not created Admin operation error: OperationTimedOut (Local: Timed out)
+```
+
+I've also tried to use a public external Kafka like https://upstash.com and the same behavior still persists.
